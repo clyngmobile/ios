@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		554AE916164A7D51000A4BD1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554AE915164A7D51000A4BD1 /* MobileCoreServices.framework */; };
+		554AE918164A7D76000A4BD1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554AE917164A7D76000A4BD1 /* CFNetwork.framework */; };
+		554AE91A164A7D8D000A4BD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554AE919164A7D8D000A4BD1 /* SystemConfiguration.framework */; };
+		554AE91C164A7D9F000A4BD1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 554AE91B164A7D9F000A4BD1 /* libz.dylib */; };
+		554AE92D164A960B000A4BD1 /* ChangeUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AE92B164A960B000A4BD1 /* ChangeUserViewController.m */; };
+		554AE92E164A960B000A4BD1 /* ChangeUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554AE92C164A960B000A4BD1 /* ChangeUserViewController.xib */; };
+		55FF6E4B1647E654002BB878 /* SetValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FF6E491647E654002BB878 /* SetValueViewController.m */; };
+		55FF6E4C1647E654002BB878 /* SetValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FF6E4A1647E654002BB878 /* SetValueViewController.xib */; };
+		F84A4877157794CF007E91B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A4876157794CE007E91B5 /* UIKit.framework */; };
+		F84A4879157794CF007E91B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A4878157794CF007E91B5 /* Foundation.framework */; };
+		F84A487B157794CF007E91B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A487A157794CF007E91B5 /* CoreGraphics.framework */; };
+		F84A4881157794CF007E91B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F84A487F157794CF007E91B5 /* InfoPlist.strings */; };
+		F84A4883157794CF007E91B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4882157794CF007E91B5 /* main.m */; };
+		F84A4887157794CF007E91B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4886157794CF007E91B5 /* AppDelegate.m */; };
+		F84A488A157794CF007E91B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4889157794CF007E91B5 /* ViewController.m */; };
+		F84A488D157794CF007E91B5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84A488B157794CF007E91B5 /* ViewController.xib */; };
+		F84A48C315779DE3007E91B5 /* libClyngMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A48BC15779B56007E91B5 /* libClyngMobile.a */; };
+		F84A48C515779E11007E91B5 /* ClyngConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F84A48C415779E11007E91B5 /* ClyngConfig.plist */; };
+		F84A48C71577A60C007E91B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A48C61577A60C007E91B5 /* CoreLocation.framework */; };
+		F8DE629A15CDA1B8003A6215 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DE629815CDA1B8003A6215 /* LoginViewController.m */; };
+		F8DE629B15CDA1B8003A6215 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DE629915CDA1B8003A6215 /* LoginViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F84A48BB15779B56007E91B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84A48B715779B56007E91B5 /* ClyngMobile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8E3AE37156999A600F8FE58;
+			remoteInfo = ClyngMobile;
+		};
+		F84A48C015779D6F007E91B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84A48B715779B56007E91B5 /* ClyngMobile.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E3AE36156999A600F8FE58;
+			remoteInfo = ClyngMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		554AE915164A7D51000A4BD1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		554AE917164A7D76000A4BD1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		554AE919164A7D8D000A4BD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		554AE91B164A7D9F000A4BD1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		554AE92A164A960B000A4BD1 /* ChangeUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeUserViewController.h; sourceTree = "<group>"; };
+		554AE92B164A960B000A4BD1 /* ChangeUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeUserViewController.m; sourceTree = "<group>"; };
+		554AE92C164A960B000A4BD1 /* ChangeUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeUserViewController.xib; sourceTree = "<group>"; };
+		55FF6E481647E654002BB878 /* SetValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetValueViewController.h; sourceTree = "<group>"; };
+		55FF6E491647E654002BB878 /* SetValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetValueViewController.m; sourceTree = "<group>"; };
+		55FF6E4A1647E654002BB878 /* SetValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetValueViewController.xib; sourceTree = "<group>"; };
+		F84A4872157794CE007E91B5 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84A4876157794CE007E91B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F84A4878157794CF007E91B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F84A487A157794CF007E91B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F84A487E157794CF007E91B5 /* demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "demo-Info.plist"; sourceTree = "<group>"; };
+		F84A4880157794CF007E91B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F84A4882157794CF007E91B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F84A4884157794CF007E91B5 /* demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-Prefix.pch"; sourceTree = "<group>"; };
+		F84A4885157794CF007E91B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F84A4886157794CF007E91B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F84A4888157794CF007E91B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F84A4889157794CF007E91B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F84A488C157794CF007E91B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F84A48B715779B56007E91B5 /* ClyngMobile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ClyngMobile.xcodeproj; path = ../corelib/ClyngMobile.xcodeproj; sourceTree = "<group>"; };
+		F84A48C415779E11007E91B5 /* ClyngConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClyngConfig.plist; sourceTree = "<group>"; };
+		F84A48C61577A60C007E91B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F8DE629715CDA1B8003A6215 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F8DE629815CDA1B8003A6215 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F8DE629915CDA1B8003A6215 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F84A486F157794CE007E91B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554AE91C164A7D9F000A4BD1 /* libz.dylib in Frameworks */,
+				554AE91A164A7D8D000A4BD1 /* SystemConfiguration.framework in Frameworks */,
+				554AE918164A7D76000A4BD1 /* CFNetwork.framework in Frameworks */,
+				554AE916164A7D51000A4BD1 /* MobileCoreServices.framework in Frameworks */,
+				F84A48C315779DE3007E91B5 /* libClyngMobile.a in Frameworks */,
+				F84A4877157794CF007E91B5 /* UIKit.framework in Frameworks */,
+				F84A4879157794CF007E91B5 /* Foundation.framework in Frameworks */,
+				F84A48C71577A60C007E91B5 /* CoreLocation.framework in Frameworks */,
+				F84A487B157794CF007E91B5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F84A4867157794CE007E91B5 = {
+			isa = PBXGroup;
+			children = (
+				554AE91B164A7D9F000A4BD1 /* libz.dylib */,
+				554AE919164A7D8D000A4BD1 /* SystemConfiguration.framework */,
+				554AE917164A7D76000A4BD1 /* CFNetwork.framework */,
+				554AE915164A7D51000A4BD1 /* MobileCoreServices.framework */,
+				F84A48B715779B56007E91B5 /* ClyngMobile.xcodeproj */,
+				F84A487C157794CF007E91B5 /* demo */,
+				F84A4875157794CE007E91B5 /* Frameworks */,
+				F84A4873157794CE007E91B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F84A4873157794CE007E91B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F84A4872157794CE007E91B5 /* demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F84A4875157794CE007E91B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F84A48C61577A60C007E91B5 /* CoreLocation.framework */,
+				F84A4876157794CE007E91B5 /* UIKit.framework */,
+				F84A4878157794CF007E91B5 /* Foundation.framework */,
+				F84A487A157794CF007E91B5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F84A487C157794CF007E91B5 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				F84A4885157794CF007E91B5 /* AppDelegate.h */,
+				F84A4886157794CF007E91B5 /* AppDelegate.m */,
+				F84A4888157794CF007E91B5 /* ViewController.h */,
+				F84A4889157794CF007E91B5 /* ViewController.m */,
+				F84A488B157794CF007E91B5 /* ViewController.xib */,
+				F84A487D157794CF007E91B5 /* Supporting Files */,
+				F8DE629715CDA1B8003A6215 /* LoginViewController.h */,
+				F8DE629815CDA1B8003A6215 /* LoginViewController.m */,
+				F8DE629915CDA1B8003A6215 /* LoginViewController.xib */,
+				55FF6E481647E654002BB878 /* SetValueViewController.h */,
+				55FF6E491647E654002BB878 /* SetValueViewController.m */,
+				55FF6E4A1647E654002BB878 /* SetValueViewController.xib */,
+				554AE92A164A960B000A4BD1 /* ChangeUserViewController.h */,
+				554AE92B164A960B000A4BD1 /* ChangeUserViewController.m */,
+				554AE92C164A960B000A4BD1 /* ChangeUserViewController.xib */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		F84A487D157794CF007E91B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F84A487E157794CF007E91B5 /* demo-Info.plist */,
+				F84A487F157794CF007E91B5 /* InfoPlist.strings */,
+				F84A4882157794CF007E91B5 /* main.m */,
+				F84A4884157794CF007E91B5 /* demo-Prefix.pch */,
+				F84A48C415779E11007E91B5 /* ClyngConfig.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F84A48B815779B56007E91B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F84A48BC15779B56007E91B5 /* libClyngMobile.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F84A4871157794CE007E91B5 /* demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84A4890157794CF007E91B5 /* Build configuration list for PBXNativeTarget "demo" */;
+			buildPhases = (
+				F84A486E157794CE007E91B5 /* Sources */,
+				F84A486F157794CE007E91B5 /* Frameworks */,
+				F84A4870157794CE007E91B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F84A48C115779D6F007E91B5 /* PBXTargetDependency */,
+			);
+			name = demo;
+			productName = demo;
+			productReference = F84A4872157794CE007E91B5 /* demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F84A4869157794CE007E91B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = F84A486C157794CE007E91B5 /* Build configuration list for PBXProject "demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F84A4867157794CE007E91B5;
+			productRefGroup = F84A4873157794CE007E91B5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F84A48B815779B56007E91B5 /* Products */;
+					ProjectRef = F84A48B715779B56007E91B5 /* ClyngMobile.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F84A4871157794CE007E91B5 /* demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F84A48BC15779B56007E91B5 /* libClyngMobile.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libClyngMobile.a;
+			remoteRef = F84A48BB15779B56007E91B5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F84A4870157794CE007E91B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84A4881157794CF007E91B5 /* InfoPlist.strings in Resources */,
+				F84A488D157794CF007E91B5 /* ViewController.xib in Resources */,
+				F84A48C515779E11007E91B5 /* ClyngConfig.plist in Resources */,
+				F8DE629B15CDA1B8003A6215 /* LoginViewController.xib in Resources */,
+				55FF6E4C1647E654002BB878 /* SetValueViewController.xib in Resources */,
+				554AE92E164A960B000A4BD1 /* ChangeUserViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F84A486E157794CE007E91B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84A4883157794CF007E91B5 /* main.m in Sources */,
+				F84A4887157794CF007E91B5 /* AppDelegate.m in Sources */,
+				F84A488A157794CF007E91B5 /* ViewController.m in Sources */,
+				F8DE629A15CDA1B8003A6215 /* LoginViewController.m in Sources */,
+				55FF6E4B1647E654002BB878 /* SetValueViewController.m in Sources */,
+				554AE92D164A960B000A4BD1 /* ChangeUserViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F84A48C115779D6F007E91B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ClyngMobile;
+			targetProxy = F84A48C015779D6F007E91B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F84A487F157794CF007E91B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F84A4880157794CF007E91B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F84A488B157794CF007E91B5 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F84A488C157794CF007E91B5 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F84A488E157794CF007E91B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rule Grid, Inc.";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D702CE6-8774-428B-A9DA-C7F3DE1DF82C";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F84A488F157794CF007E91B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dmytro Kalachniuk (J8HBVH75EA)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F84A4891157794CF007E91B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "demo/demo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "demo/demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../out\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../corelib/ClyngMobile/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F84A4892157794CF007E91B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rule Grid, Inc.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "demo/demo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "demo/demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../out\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D702CE6-8774-428B-A9DA-C7F3DE1DF82C";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../corelib/ClyngMobile/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F84A486C157794CE007E91B5 /* Build configuration list for PBXProject "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84A488E157794CF007E91B5 /* Debug */,
+				F84A488F157794CF007E91B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F84A4890157794CF007E91B5 /* Build configuration list for PBXNativeTarget "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84A4891157794CF007E91B5 /* Debug */,
+				F84A4892157794CF007E91B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F84A4869157794CE007E91B5 /* Project object */;
+}

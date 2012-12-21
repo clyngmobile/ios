@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		554AE91F164A89FB000A4BD1 /* CustomExceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 554AE91D164A89FB000A4BD1 /* CustomExceptions.h */; };
+		554AE920164A89FB000A4BD1 /* CustomExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AE91E164A89FB000A4BD1 /* CustomExceptions.m */; };
+		F84A48E01577C90F007E91B5 /* MessagesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F84A48DE1577C90F007E91B5 /* MessagesViewController.h */; };
+		F84A48E11577C90F007E91B5 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A48DF1577C90F007E91B5 /* MessagesViewController.m */; };
+		F86ABB7415763C1300885A87 /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB7215763C1300885A87 /* Message.h */; };
+		F86ABB7515763C1300885A87 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABB7315763C1300885A87 /* Message.m */; };
+		F86ABB791576440E00885A87 /* EmbeddedElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB771576440E00885A87 /* EmbeddedElement.h */; };
+		F86ABB7A1576440E00885A87 /* EmbeddedElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABB781576440E00885A87 /* EmbeddedElement.m */; };
+		F86ABB7D1576455500885A87 /* NSNull+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB7B1576455500885A87 /* NSNull+Extensions.h */; };
+		F86ABB7E1576455500885A87 /* NSNull+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABB7C1576455500885A87 /* NSNull+Extensions.m */; };
+		F86ABBB015764AB800885A87 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBA015764AB800885A87 /* JSON.h */; };
+		F86ABBB115764AB800885A87 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBA115764AB800885A87 /* NSObject+SBJSON.h */; };
+		F86ABBB215764AB800885A87 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBA215764AB800885A87 /* NSObject+SBJSON.m */; };
+		F86ABBB315764AB800885A87 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBA315764AB800885A87 /* NSString+SBJSON.h */; };
+		F86ABBB415764AB800885A87 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBA415764AB800885A87 /* NSString+SBJSON.m */; };
+		F86ABBB515764AB800885A87 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBA515764AB800885A87 /* SBJSON.h */; };
+		F86ABBB615764AB800885A87 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBA615764AB800885A87 /* SBJSON.m */; };
+		F86ABBB715764AB800885A87 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBA715764AB800885A87 /* SBJsonBase.h */; };
+		F86ABBB815764AB800885A87 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBA815764AB800885A87 /* SBJsonBase.m */; };
+		F86ABBB915764AB800885A87 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBA915764AB800885A87 /* SBJsonParser.h */; };
+		F86ABBBA15764AB800885A87 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBAA15764AB800885A87 /* SBJsonParser.m */; };
+		F86ABBBB15764AB800885A87 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBAB15764AB800885A87 /* SBJsonWriter.h */; };
+		F86ABBBC15764AB800885A87 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBAC15764AB800885A87 /* SBJsonWriter.m */; };
+		F86ABBBD15764AB800885A87 /* OHURLLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABBAE15764AB800885A87 /* OHURLLoader.h */; };
+		F86ABBBE15764AB800885A87 /* OHURLLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABBAF15764AB800885A87 /* OHURLLoader.m */; };
+		F8DE62A415CDA6DA003A6215 /* SwipeMessagesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DE62A215CDA6DA003A6215 /* SwipeMessagesViewController.h */; };
+		F8DE62A515CDA6DA003A6215 /* SwipeMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62A315CDA6DA003A6215 /* SwipeMessagesViewController.m */; };
+		F8DE62A915CDA72B003A6215 /* PageView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DE62A715CDA72B003A6215 /* PageView.h */; };
+		F8DE62AA15CDA72B003A6215 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62A815CDA72B003A6215 /* PageView.m */; };
+		F8E3AE3B156999A600F8FE58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E3AE3A156999A600F8FE58 /* Foundation.framework */; };
+		F8E3AE4D156999F400F8FE58 /* CMClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E3AE4B156999F400F8FE58 /* CMClient.h */; };
+		F8E3AE4E156999F400F8FE58 /* CMClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E3AE4C156999F400F8FE58 /* CMClient.m */; };
+		F8E3AE5015699CE200F8FE58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E3AE4F15699CE200F8FE58 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		554AE91D164A89FB000A4BD1 /* CustomExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomExceptions.h; sourceTree = "<group>"; };
+		554AE91E164A89FB000A4BD1 /* CustomExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomExceptions.m; sourceTree = "<group>"; };
+		F84A48DE1577C90F007E91B5 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		F84A48DF1577C90F007E91B5 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		F84A48EC157800B7007E91B5 /* ClyngMobile.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ClyngMobile.bundle; sourceTree = "<group>"; };
+		F86ABB7215763C1300885A87 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		F86ABB7315763C1300885A87 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		F86ABB771576440E00885A87 /* EmbeddedElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedElement.h; sourceTree = "<group>"; };
+		F86ABB781576440E00885A87 /* EmbeddedElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedElement.m; sourceTree = "<group>"; };
+		F86ABB7B1576455500885A87 /* NSNull+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Extensions.h"; sourceTree = "<group>"; };
+		F86ABB7C1576455500885A87 /* NSNull+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Extensions.m"; sourceTree = "<group>"; };
+		F86ABBA015764AB800885A87 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		F86ABBA115764AB800885A87 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		F86ABBA215764AB800885A87 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		F86ABBA315764AB800885A87 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		F86ABBA415764AB800885A87 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		F86ABBA515764AB800885A87 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		F86ABBA615764AB800885A87 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		F86ABBA715764AB800885A87 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		F86ABBA815764AB800885A87 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		F86ABBA915764AB800885A87 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		F86ABBAA15764AB800885A87 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		F86ABBAB15764AB800885A87 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F86ABBAC15764AB800885A87 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F86ABBAE15764AB800885A87 /* OHURLLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHURLLoader.h; sourceTree = "<group>"; };
+		F86ABBAF15764AB800885A87 /* OHURLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHURLLoader.m; sourceTree = "<group>"; };
+		F8DE62A215CDA6DA003A6215 /* SwipeMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeMessagesViewController.h; sourceTree = "<group>"; };
+		F8DE62A315CDA6DA003A6215 /* SwipeMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeMessagesViewController.m; sourceTree = "<group>"; };
+		F8DE62A715CDA72B003A6215 /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
+		F8DE62A815CDA72B003A6215 /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
+		F8E3AE37156999A600F8FE58 /* libClyngMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libClyngMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E3AE3A156999A600F8FE58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8E3AE3E156999A600F8FE58 /* ClyngMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClyngMobile-Prefix.pch"; sourceTree = "<group>"; };
+		F8E3AE4B156999F400F8FE58 /* CMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMClient.h; sourceTree = "<group>"; };
+		F8E3AE4C156999F400F8FE58 /* CMClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMClient.m; sourceTree = "<group>"; };
+		F8E3AE4F15699CE200F8FE58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8E3AE34156999A600F8FE58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E3AE5015699CE200F8FE58 /* CoreLocation.framework in Frameworks */,
+				F8E3AE3B156999A600F8FE58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F86ABB9F15764AB800885A87 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABBA015764AB800885A87 /* JSON.h */,
+				F86ABBA115764AB800885A87 /* NSObject+SBJSON.h */,
+				F86ABBA215764AB800885A87 /* NSObject+SBJSON.m */,
+				F86ABBA315764AB800885A87 /* NSString+SBJSON.h */,
+				F86ABBA415764AB800885A87 /* NSString+SBJSON.m */,
+				F86ABBA515764AB800885A87 /* SBJSON.h */,
+				F86ABBA615764AB800885A87 /* SBJSON.m */,
+				F86ABBA715764AB800885A87 /* SBJsonBase.h */,
+				F86ABBA815764AB800885A87 /* SBJsonBase.m */,
+				F86ABBA915764AB800885A87 /* SBJsonParser.h */,
+				F86ABBAA15764AB800885A87 /* SBJsonParser.m */,
+				F86ABBAB15764AB800885A87 /* SBJsonWriter.h */,
+				F86ABBAC15764AB800885A87 /* SBJsonWriter.m */,
+			);
+			name = Json;
+			path = ../../3rdparty/Json;
+			sourceTree = "<group>";
+		};
+		F86ABBAD15764AB800885A87 /* OHURLLoader */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABBAE15764AB800885A87 /* OHURLLoader.h */,
+				F86ABBAF15764AB800885A87 /* OHURLLoader.m */,
+			);
+			name = OHURLLoader;
+			path = ../../3rdparty/OHURLLoader;
+			sourceTree = "<group>";
+		};
+		F8E3AE2C156999A600F8FE58 = {
+			isa = PBXGroup;
+			children = (
+				F84A48EC157800B7007E91B5 /* ClyngMobile.bundle */,
+				F8E3AE3C156999A600F8FE58 /* ClyngMobile */,
+				F8E3AE39156999A600F8FE58 /* Frameworks */,
+				F8E3AE38156999A600F8FE58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8E3AE38156999A600F8FE58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8E3AE37156999A600F8FE58 /* libClyngMobile.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8E3AE39156999A600F8FE58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E3AE4F15699CE200F8FE58 /* CoreLocation.framework */,
+				F8E3AE3A156999A600F8FE58 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E3AE3C156999A600F8FE58 /* ClyngMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABB9F15764AB800885A87 /* Json */,
+				F86ABBAD15764AB800885A87 /* OHURLLoader */,
+				F8E3AE3D156999A600F8FE58 /* Supporting Files */,
+				F8E3AE4B156999F400F8FE58 /* CMClient.h */,
+				F8E3AE4C156999F400F8FE58 /* CMClient.m */,
+				F86ABB7215763C1300885A87 /* Message.h */,
+				F86ABB7315763C1300885A87 /* Message.m */,
+				F86ABB771576440E00885A87 /* EmbeddedElement.h */,
+				F86ABB781576440E00885A87 /* EmbeddedElement.m */,
+				F86ABB7B1576455500885A87 /* NSNull+Extensions.h */,
+				F86ABB7C1576455500885A87 /* NSNull+Extensions.m */,
+				F84A48DE1577C90F007E91B5 /* MessagesViewController.h */,
+				F84A48DF1577C90F007E91B5 /* MessagesViewController.m */,
+				F8DE62A215CDA6DA003A6215 /* SwipeMessagesViewController.h */,
+				F8DE62A315CDA6DA003A6215 /* SwipeMessagesViewController.m */,
+				F8DE62A715CDA72B003A6215 /* PageView.h */,
+				F8DE62A815CDA72B003A6215 /* PageView.m */,
+				554AE91D164A89FB000A4BD1 /* CustomExceptions.h */,
+				554AE91E164A89FB000A4BD1 /* CustomExceptions.m */,
+			);
+			path = ClyngMobile;
+			sourceTree = "<group>";
+		};
+		F8E3AE3D156999A600F8FE58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E3AE3E156999A600F8FE58 /* ClyngMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8E3AE35156999A600F8FE58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E3AE4D156999F400F8FE58 /* CMClient.h in Headers */,
+				F86ABB7415763C1300885A87 /* Message.h in Headers */,
+				F86ABB791576440E00885A87 /* EmbeddedElement.h in Headers */,
+				F86ABB7D1576455500885A87 /* NSNull+Extensions.h in Headers */,
+				F86ABBB015764AB800885A87 /* JSON.h in Headers */,
+				F86ABBB115764AB800885A87 /* NSObject+SBJSON.h in Headers */,
+				F86ABBB315764AB800885A87 /* NSString+SBJSON.h in Headers */,
+				F86ABBB515764AB800885A87 /* SBJSON.h in Headers */,
+				F86ABBB715764AB800885A87 /* SBJsonBase.h in Headers */,
+				F86ABBB915764AB800885A87 /* SBJsonParser.h in Headers */,
+				F86ABBBB15764AB800885A87 /* SBJsonWriter.h in Headers */,
+				F86ABBBD15764AB800885A87 /* OHURLLoader.h in Headers */,
+				F84A48E01577C90F007E91B5 /* MessagesViewController.h in Headers */,
+				F8DE62A415CDA6DA003A6215 /* SwipeMessagesViewController.h in Headers */,
+				F8DE62A915CDA72B003A6215 /* PageView.h in Headers */,
+				554AE91F164A89FB000A4BD1 /* CustomExceptions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F8E3AE36156999A600F8FE58 /* ClyngMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E3AE44156999A600F8FE58 /* Build configuration list for PBXNativeTarget "ClyngMobile" */;
+			buildPhases = (
+				F8E3AE33156999A600F8FE58 /* Sources */,
+				F8E3AE34156999A600F8FE58 /* Frameworks */,
+				F8E3AE35156999A600F8FE58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClyngMobile;
+			productName = ClyngMobile;
+			productReference = F8E3AE37156999A600F8FE58 /* libClyngMobile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E3AE2E156999A600F8FE58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = F8E3AE31156999A600F8FE58 /* Build configuration list for PBXProject "ClyngMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8E3AE2C156999A600F8FE58;
+			productRefGroup = F8E3AE38156999A600F8FE58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8E3AE36156999A600F8FE58 /* ClyngMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8E3AE33156999A600F8FE58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E3AE4E156999F400F8FE58 /* CMClient.m in Sources */,
+				F86ABB7515763C1300885A87 /* Message.m in Sources */,
+				F86ABB7A1576440E00885A87 /* EmbeddedElement.m in Sources */,
+				F86ABB7E1576455500885A87 /* NSNull+Extensions.m in Sources */,
+				F86ABBB215764AB800885A87 /* NSObject+SBJSON.m in Sources */,
+				F86ABBB415764AB800885A87 /* NSString+SBJSON.m in Sources */,
+				F86ABBB615764AB800885A87 /* SBJSON.m in Sources */,
+				F86ABBB815764AB800885A87 /* SBJsonBase.m in Sources */,
+				F86ABBBA15764AB800885A87 /* SBJsonParser.m in Sources */,
+				F86ABBBC15764AB800885A87 /* SBJsonWriter.m in Sources */,
+				F86ABBBE15764AB800885A87 /* OHURLLoader.m in Sources */,
+				F84A48E11577C90F007E91B5 /* MessagesViewController.m in Sources */,
+				F8DE62A515CDA6DA003A6215 /* SwipeMessagesViewController.m in Sources */,
+				F8DE62AA15CDA72B003A6215 /* PageView.m in Sources */,
+				554AE920164A89FB000A4BD1 /* CustomExceptions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F8E3AE42156999A600F8FE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8E3AE43156999A600F8FE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8E3AE45156999A600F8FE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				DSTROOT = /tmp/ClyngMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClyngMobile/ClyngMobile-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F8E3AE46156999A600F8FE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				DSTROOT = /tmp/ClyngMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClyngMobile/ClyngMobile-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8E3AE31156999A600F8FE58 /* Build configuration list for PBXProject "ClyngMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E3AE42156999A600F8FE58 /* Debug */,
+				F8E3AE43156999A600F8FE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E3AE44156999A600F8FE58 /* Build configuration list for PBXNativeTarget "ClyngMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E3AE45156999A600F8FE58 /* Debug */,
+				F8E3AE46156999A600F8FE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E3AE2E156999A600F8FE58 /* Project object */;
+}

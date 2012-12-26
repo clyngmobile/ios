@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>serverUrl</key>
-	<string>https://gotest.clyng.com</string>
+	<string>https://go.clyng.com</string>
 	<key>apiKey</key>
-	<string>pk-0e00ec85-953b-4ccf-956a-f89f72f5ede6</string>
+	<string>your private apiKey here</string>
 </dict>
 </plist>

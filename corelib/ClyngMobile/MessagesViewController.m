@@ -7,7 +7,7 @@
 //
 
 #import "MessagesViewController.h"
-#import "Message.h"
+#import "CMMessage.h"
 #import "CMClient.h"
 
 @interface MessagesViewController ()
@@ -144,7 +144,7 @@
 - (IBAction) onRemoveClicked: (id) sender {
     
     if (_messageIndex < 0) return;
-    Message* message = [_messages objectAtIndex: _messageIndex];
+    CMMessage * message = [_messages objectAtIndex: _messageIndex];
     int neededMessageId = (message.isPull) ? message.messageId : message.htmlMessageId;
     int isPull = (message.isPull) ? 1 : 0;
     [[CMClient sharedInstance] performSelector: @selector(removeMessage:isPull:) withObject: [NSNumber numberWithInt: neededMessageId] withObject: [NSNumber numberWithInt:isPull]];
@@ -176,7 +176,7 @@
 - (void) showMessage {
     if (_messageIndex < 0)
         return;
-    Message* message = [_messages objectAtIndex: _messageIndex];
+    CMMessage * message = [_messages objectAtIndex: _messageIndex];
     if ([message.html length])
     {
         [_webView loadHTMLString: message.html baseURL: [NSURL URLWithString: [CMClient sharedInstance].serverUrl]];

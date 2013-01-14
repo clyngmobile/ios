@@ -8,7 +8,7 @@
 
 #import "SwipeMessagesViewController.h"
 #import "PageView.h"
-#import "Message.h"
+#import "CMMessage.h"
 #import "CMClient.h"
 
 @interface SwipeMessagesViewController ()
@@ -69,7 +69,7 @@
     int width2 = UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation) ?
     [UIScreen mainScreen].applicationFrame.size.width : [UIScreen mainScreen].applicationFrame.size.height;
     _messageIndex = (int) _scrollView.contentOffset.x / width2;
-    Message* message = [_messages objectAtIndex: _messageIndex];
+    CMMessage * message = [_messages objectAtIndex: _messageIndex];
     //[[CMClient sharedInstance] performSelector: @selector(notifyMessageOpened:htmlMessageID:campaignId:) withObject: [NSNumber numberWithInt: message.messageId] withObject:[NSNumber numberWithInt:message.htmlMessageId] ];
     NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInt: message.messageId],[NSNumber numberWithInt:message.htmlMessageId],[NSNumber numberWithInt:message.campaignID], nil];
     [[CMClient sharedInstance] performSelector: @selector(notifyMessageOpened:) withObject:array];
@@ -80,7 +80,7 @@
                     [UIScreen mainScreen].applicationFrame.size.width : [UIScreen mainScreen].applicationFrame.size.height;
     
     _messageIndex = (int) scrollView.contentOffset.x / width;
-    Message* message = [_messages objectAtIndex: _messageIndex];
+    CMMessage * message = [_messages objectAtIndex: _messageIndex];
     //[[CMClient sharedInstance] performSelector: @selector(notifyMessageOpened:htmlMessageID:) withObject: [NSNumber numberWithInt: message.messageId] withObject:[NSNumber numberWithInt:message.htmlMessageId]];
     NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInt: message.messageId],[NSNumber numberWithInt:message.htmlMessageId],[NSNumber numberWithInt:message.campaignID], nil];
     [[CMClient sharedInstance] performSelector: @selector(notifyMessageOpened:) withObject:array];
@@ -108,7 +108,7 @@
     }
     
     int index = 0;
-    for(Message* message in _messages){
+    for(CMMessage * message in _messages){
         NSLog(@"-messages = %@",_messages);
         if ([message.html length])
         {
@@ -152,7 +152,7 @@
 }
 
 - (IBAction) onRemoveClicked: (id) sender {
-    Message* message = [_messages objectAtIndex: _messageIndex];
+    CMMessage * message = [_messages objectAtIndex: _messageIndex];
     int neededMessageId = (message.isPull) ? message.messageId : message.htmlMessageId;
     int isPull = (message.isPull) ? 1 : 0;
     [[CMClient sharedInstance] performSelector: @selector(removeMessage:isPull:) withObject: [NSNumber numberWithInt: neededMessageId] withObject: [NSNumber numberWithInt:isPull]];

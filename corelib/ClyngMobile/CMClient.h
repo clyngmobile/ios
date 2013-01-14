@@ -25,7 +25,7 @@ typedef enum {
     CMClientViewMode_Fullscreen = 1
 } CMClientViewMode;
 
-@class Message;
+@class CMMessage;
 
 @interface CMClient : NSObject  {
     NSString* _serverUrl;
@@ -90,7 +90,7 @@ typedef enum {
 
 
 - (void) getMessagesHtml: (NSArray*) messages index: (int) index callback: (void(^)(NSArray* messages)) callback errorBlock:(CMErrorBlock)onError succesBlock:(CMSuccessBlock)onSuccess;
-- (void) getMessageHtml: (Message*) message callback: (void(^)(NSString* html)) callback  errorBlock:(CMErrorBlock)onError succesBlock:(CMSuccessBlock)onSuccess;
+- (void) getMessageHtml: (CMMessage *) message callback: (void(^)(NSString* html)) callback  errorBlock:(CMErrorBlock)onError succesBlock:(CMSuccessBlock)onSuccess;
 
 - (void) removeMessage: (NSNumber*) messageWrapper isPull:(NSNumber*) isPull errorBlock:(CMErrorBlock)onError succesBlock:(CMSuccessBlock)onSuccess;
 

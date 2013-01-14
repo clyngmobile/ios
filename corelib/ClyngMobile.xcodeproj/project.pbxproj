@@ -11,8 +11,8 @@
 		554AE920164A89FB000A4BD1 /* CustomExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AE91E164A89FB000A4BD1 /* CustomExceptions.m */; };
 		F84A48E01577C90F007E91B5 /* MessagesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F84A48DE1577C90F007E91B5 /* MessagesViewController.h */; };
 		F84A48E11577C90F007E91B5 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A48DF1577C90F007E91B5 /* MessagesViewController.m */; };
-		F86ABB7415763C1300885A87 /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB7215763C1300885A87 /* Message.h */; };
-		F86ABB7515763C1300885A87 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABB7315763C1300885A87 /* Message.m */; };
+		F86ABB7415763C1300885A87 /* CMMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB7215763C1300885A87 /* CMMessage.h */; };
+		F86ABB7515763C1300885A87 /* CMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABB7315763C1300885A87 /* CMMessage.m */; };
 		F86ABB791576440E00885A87 /* EmbeddedElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB771576440E00885A87 /* EmbeddedElement.h */; };
 		F86ABB7A1576440E00885A87 /* EmbeddedElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABB781576440E00885A87 /* EmbeddedElement.m */; };
 		F86ABB7D1576455500885A87 /* NSNull+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F86ABB7B1576455500885A87 /* NSNull+Extensions.h */; };
@@ -48,8 +48,8 @@
 		F84A48DE1577C90F007E91B5 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		F84A48DF1577C90F007E91B5 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		F84A48EC157800B7007E91B5 /* ClyngMobile.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ClyngMobile.bundle; sourceTree = "<group>"; };
-		F86ABB7215763C1300885A87 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		F86ABB7315763C1300885A87 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		F86ABB7215763C1300885A87 /* CMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMessage.h; sourceTree = "<group>"; };
+		F86ABB7315763C1300885A87 /* CMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMessage.m; sourceTree = "<group>"; };
 		F86ABB771576440E00885A87 /* EmbeddedElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedElement.h; sourceTree = "<group>"; };
 		F86ABB781576440E00885A87 /* EmbeddedElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedElement.m; sourceTree = "<group>"; };
 		F86ABB7B1576455500885A87 /* NSNull+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Extensions.h"; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 				F8E3AE3D156999A600F8FE58 /* Supporting Files */,
 				F8E3AE4B156999F400F8FE58 /* CMClient.h */,
 				F8E3AE4C156999F400F8FE58 /* CMClient.m */,
-				F86ABB7215763C1300885A87 /* Message.h */,
-				F86ABB7315763C1300885A87 /* Message.m */,
+				F86ABB7215763C1300885A87 /* CMMessage.h */,
+				F86ABB7315763C1300885A87 /* CMMessage.m */,
 				F86ABB771576440E00885A87 /* EmbeddedElement.h */,
 				F86ABB781576440E00885A87 /* EmbeddedElement.m */,
 				F86ABB7B1576455500885A87 /* NSNull+Extensions.h */,
@@ -194,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E3AE4D156999F400F8FE58 /* CMClient.h in Headers */,
-				F86ABB7415763C1300885A87 /* Message.h in Headers */,
+				F86ABB7415763C1300885A87 /* CMMessage.h in Headers */,
 				F86ABB791576440E00885A87 /* EmbeddedElement.h in Headers */,
 				F86ABB7D1576455500885A87 /* NSNull+Extensions.h in Headers */,
 				F86ABBB015764AB800885A87 /* JSON.h in Headers */,
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E3AE4E156999F400F8FE58 /* CMClient.m in Sources */,
-				F86ABB7515763C1300885A87 /* Message.m in Sources */,
+				F86ABB7515763C1300885A87 /* CMMessage.m in Sources */,
 				F86ABB7A1576440E00885A87 /* EmbeddedElement.m in Sources */,
 				F86ABB7E1576455500885A87 /* NSNull+Extensions.m in Sources */,
 				F86ABBB215764AB800885A87 /* NSObject+SBJSON.m in Sources */,

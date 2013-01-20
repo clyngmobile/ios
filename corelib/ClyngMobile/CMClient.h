@@ -48,11 +48,11 @@ typedef enum {
 
 //host application should call one of init** methods only once. second call with take no effect
 //init client with default ClyngConfig.plist
-+ (void) init;
++ (CMClient *) init;
 //init client with dictionary
-+ (void) initWithDictionary: (NSDictionary*) properties;
++ (CMClient *) initWithDictionary: (NSDictionary*) properties;
 //init client with plist file name
-+ (void) initWithPlist: (NSString*) propertiesFileName;
++ (CMClient *) initWithPlist: (NSString*) propertiesFileName;
 //get instance of client, host application should call one of init** methods first
 + (CMClient*) sharedInstance;
 

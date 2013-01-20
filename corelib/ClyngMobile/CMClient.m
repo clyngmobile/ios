@@ -48,7 +48,7 @@ static CMClient *_instance;
 @synthesize viewMode;
 
 
-- (id)init {
+- (CMClient *)init {
     self = [super init];
     if (self == [super init]) {
 
@@ -74,14 +74,7 @@ static CMClient *_instance;
 }
 
 + (CMClient *)sharedInstance {
-    @synchronized (self) {
-        if (_instance)
-            return _instance;
-        else {
-            _instance = [[CMClient alloc] init];
-            return _instance;
-        }
-    }
+    return _instance;
 }
 
 + (void)registerWithApple {
@@ -89,29 +82,32 @@ static CMClient *_instance;
             UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
 }
 
-+ (void)init {
-    [CMClient initWithPlist:DEFAULT_PLIST_NAME];
++ (CMClient *)init {
+    return [CMClient initWithPlist:DEFAULT_PLIST_NAME];
 }
 
-+ (void)initWithDictionary:(NSDictionary *)properties {
-        if (_instance) {
-            [_instance release];
-        }
-
++ (CMClient *)initWithDictionary:(NSDictionary *)properties {
+    if (nil != _instance) {
+        [_instance release];
+    }
+    static dispatch_once_t pred;// Lock
+    dispatch_once(&pred, ^{// This code is called at most once per app
         _instance = [[CMClient alloc] init];
-        CMClient *client = [CMClient sharedInstance];
-
-        client.serverUrl = [properties objectForKey:cm_serverUrl];
-        client.serial = [properties objectForKey:cm_apiKey];
+        _instance.serverUrl = [properties objectForKey:cm_serverUrl];
+        _instance.serial = [properties objectForKey:cm_apiKey];
+    });
+    return _instance;
 }
 
-+ (void)initWithPlist:(NSString *)propertiesFileName {
++ (CMClient *)initWithPlist:(NSString *)propertiesFileName {
     NSString *path = [[NSBundle mainBundle] pathForResource:propertiesFileName ofType:nil];
     NSDictionary *properties = [NSDictionary dictionaryWithContentsOfFile:path];
     if (!properties) {
         NSLog(@"Can't load properties file: %@", propertiesFileName);
+        return nil;
+    } else {
+        return [CMClient initWithDictionary:properties];
     }
-    [CMClient initWithDictionary:properties];
 }
 
 - (void)setGlobalHandler:(CMErrorBlock)errorBlock successBlock:(CMSuccessBlock)successBlock {
